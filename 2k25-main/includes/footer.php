@@ -1,5 +1,5 @@
 <footer class="main-footer">
-    <strong>Copyright &copy; 2025 - Todos os direitos reservados para o Felipe.</strong>
+    <strong>Copyright &copy; 2025 - Todos os direitos reservados para o kauan.</strong>
     <div class="float-right d-none d-sm-inline-block">
       <b>AG Versão</b> 2.0
     </div>

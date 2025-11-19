@@ -22,7 +22,7 @@ include_once('sair.php');
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Agenda Eletrônica</title>
+  <title>catálogo de filmes</title>
   <!-- DataTables -->
   <link rel="stylesheet" href="https://cdn.datatables.net/2.1.3/css/dataTables.dataTables.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.1/css/buttons.dataTables.css">
@@ -145,7 +145,7 @@ try {
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <span class="brand-text font-weight-light">Agenda Eletrônica</span>
+      <span class="brand-text font-weight-light">filmes</span>
     </a>
 
     <!-- Sidebar -->
