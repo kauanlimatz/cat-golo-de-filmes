@@ -1,4 +1,4 @@
-<body style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh;">
+<body style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); min-height: 100vh;">
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper" style="background: transparent;">
@@ -23,8 +23,8 @@
 
                 <!-- COLUNA ESQUERDA – CADASTRO -->
                 <div class="col-md-4">
-                    <div class="card card-primary shadow-lg" style="border: none; border-radius: 15px;">
-                        <div class="card-header" style="background: linear-gradient(45deg, #007bff, #0056b3); border-radius: 15px 15px 0 0;">
+                    <div class="card shadow-lg" style="border: none; border-radius: 15px; background: #34495e;">
+                        <div class="card-header" style="background: linear-gradient(45deg, #1a252f, #2c3e50); border-radius: 15px 15px 0 0; border-bottom: 2px solid #3498db;">
                             <h3 class="card-title mb-0" style="color: white;">
                                 <i class="fas fa-plus-circle mr-2"></i>Cadastrar Filme
                             </h3>
@@ -32,33 +32,33 @@
 
                         <!-- Formulário -->
                         <form role="form" action="" method="post" enctype="multipart/form-data">
-                            <div class="card-body" style="background: #f8f9fa;">
+                            <div class="card-body" style="background: #2c3e50;">
 
                                 <div class="form-group">
-                                    <label class="font-weight-bold"><i class="fas fa-film mr-2 text-primary"></i>Título do Filme</label>
-                                    <input type="text" class="form-control shadow-sm" name="titulo" required placeholder="Digite o nome do filme" style="border-radius: 8px;">
+                                    <label class="font-weight-bold" style="color: #ecf0f1;"><i class="fas fa-film mr-2" style="color: #3498db;"></i>Título do Filme</label>
+                                    <input type="text" class="form-control shadow-sm" name="titulo" required placeholder="Digite o nome do filme" style="border-radius: 8px; border: 1px solid #34495e; background: #1a252f; color: white;">
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="font-weight-bold"><i class="fas fa-clock mr-2 text-primary"></i>Duração (minutos)</label>
-                                    <input type="number" class="form-control shadow-sm" name="duracao" required placeholder="Ex: 120" style="border-radius: 8px;">
+                                    <label class="font-weight-bold" style="color: #ecf0f1;"><i class="fas fa-clock mr-2" style="color: #3498db;"></i>Duração (minutos)</label>
+                                    <input type="number" class="form-control shadow-sm" name="duracao" required placeholder="Ex: 120" style="border-radius: 8px; border: 1px solid #34495e; background: #1a252f; color: white;">
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="font-weight-bold"><i class="fas fa-tag mr-2 text-primary"></i>Gênero</label>
-                                    <input type="text" class="form-control shadow-sm" name="genero" required placeholder="Ex: Ação, Comédia, Drama" style="border-radius: 8px;">
+                                    <label class="font-weight-bold" style="color: #ecf0f1;"><i class="fas fa-tag mr-2" style="color: #3498db;"></i>Gênero</label>
+                                    <input type="text" class="form-control shadow-sm" name="genero" required placeholder="Ex: Ação, Comédia, Drama" style="border-radius: 8px; border: 1px solid #34495e; background: #1a252f; color: white;">
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="font-weight-bold"><i class="fas fa-certificate mr-2 text-primary"></i>Classificação</label>
-                                    <input type="text" class="form-control shadow-sm" name="classificacao" required placeholder="Ex: Livre, 10, 12, 14, 16, 18" style="border-radius: 8px;">
+                                    <label class="font-weight-bold" style="color: #ecf0f1;"><i class="fas fa-certificate mr-2" style="color: #3498db;"></i>Classificação</label>
+                                    <input type="text" class="form-control shadow-sm" name="classificacao" required placeholder="Ex: Livre, 10, 12, 14, 16, 18" style="border-radius: 8px; border: 1px solid #34495e; background: #1a252f; color: white;">
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="font-weight-bold"><i class="fas fa-image mr-2 text-primary"></i>Cartaz do Filme</label>
+                                    <label class="font-weight-bold" style="color: #ecf0f1;"><i class="fas fa-image mr-2" style="color: #3498db;"></i>Cartaz do Filme</label>
                                     <div class="custom-file">
                                         <input type="file" name="cartaz" class="custom-file-input" id="customFile">
-                                        <label class="custom-file-label" for="customFile" style="border-radius: 8px;">Selecione uma imagem</label>
+                                        <label class="custom-file-label" for="customFile" style="border-radius: 8px; border: 1px solid #34495e; background: #1a252f; color: #bdc3c7;">Selecione uma imagem</label>
                                     </div>
                                 </div>
 
@@ -66,8 +66,8 @@
 
                             </div>
 
-                            <div class="card-footer" style="background: #f8f9fa; border-radius: 0 0 15px 15px;">
-                                <button type="submit" name="botao" class="btn btn-primary btn-block py-2 shadow" style="border-radius: 8px; font-weight: bold; background: linear-gradient(45deg, #007bff, #0056b3); border: none;">
+                            <div class="card-footer" style="background: #2c3e50; border-radius: 0 0 15px 15px; border-top: 2px solid #34495e;">
+                                <button type="submit" name="botao" class="btn btn-primary btn-block py-2 shadow" style="border-radius: 8px; font-weight: bold; background: linear-gradient(45deg, #3498db, #2980b9); border: none;">
                                     <i class="fas fa-save mr-2"></i>Cadastrar Filme
                                 </button>
                             </div>
@@ -121,16 +121,14 @@
                                 $r->execute();
 
                                 echo '<div class="container">
-                                    <div class="alert alert-success alert-dismissible mt-2 shadow" style="border-radius: 10px; border: none;">
+                                    <div class="alert alert-success alert-dismissible mt-2 shadow" style="border-radius: 10px; border: none; background: #27ae60; color: white;">
                                         <button type="button" class="close" data-dismiss="alert">×</button>
                                         <h5><i class="icon fas fa-check"></i> Filme cadastrado com sucesso!</h5>
                                     </div>
                                 </div>';
 
-                                header("Refresh: 2");
-
                             } catch (PDOException $e) {
-                                echo '<div class="alert alert-danger alert-dismissible mt-2 shadow" style="border-radius: 10px; border: none;">
+                                echo '<div class="alert alert-danger alert-dismissible mt-2 shadow" style="border-radius: 10px; border: none; background: #e74c3c; color: white;">
                                         <button type="button" class="close" data-dismiss="alert">×</button>
                                         <h5><i class="icon fas fa-exclamation-triangle"></i> Erro: ' . $e->getMessage() . '</h5>
                                     </div>';
@@ -144,20 +142,58 @@
                 <!-- LISTAGEM DOS FILMES -->
                 <div class="col-md-8">
 
-                    <div class="card shadow-lg" style="border: none; border-radius: 15px;">
-                        <div class="card-header text-white" style="background: linear-gradient(45deg, #28a745, #20c997); border-radius: 15px 15px 0 0;">
+                    <div class="card shadow-lg" style="border: none; border-radius: 15px; background: #34495e;">
+                        <div class="card-header text-white" style="background: linear-gradient(45deg, #27ae60, #229954); border-radius: 15px 15px 0 0; border-bottom: 2px solid #2ecc71;">
                             <h3 class="card-title mb-0">
                                 <i class="fas fa-star mr-2"></i>Filmes em Cartaz
                             </h3>
-                            <small class="font-weight-light">Seus filmes favoritos em destaque</small>
                         </div>
 
-                        <div class="card-body" style="background: #f8f9fa; border-radius: 0 0 15px 15px;">
+                        <div class="card-body" style="background: #2c3e50; border-radius: 0 0 15px 15px;">
 
                             <div class="row">
 
+                                <!-- CARD DO THUNDERBOLTS - FIXO -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100 shadow-sm" style="border: none; border-radius: 12px; transition: transform 0.3s ease, box-shadow 0.3s ease; background: #34495e;">
+                                        <div style="position: relative; overflow: hidden; border-radius: 12px 12px 0 0;">
+                                            <img src="/index/2k25-main/filmes/Thunderbolts.jpg" 
+                                                class="card-img-top" 
+                                                style="height: 300px; object-fit: cover; transition: transform 0.3s ease;"
+                                                alt="Thunderbolts">
+                                            <div class="card-img-overlay d-flex align-items-end" style="background: linear-gradient(transparent 40%, rgba(0,0,0,0.8));">
+                                                <h5 class="card-title text-white mb-0 text-truncate">THUNDERBOLTS</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body d-flex flex-column" style="background: #2c3e50;">
+                                            <div class="movie-info mt-auto">
+                                                <p class="mb-2 small" style="color: #bdc3c7;"><i class="fas fa-clock mr-2" style="color: #3498db;"></i><b style="color: #ecf0f1;">Duração:</b> 142 min</p>
+                                                <p class="mb-2 small" style="color: #bdc3c7;"><i class="fas fa-tag mr-2" style="color: #27ae60;"></i><b style="color: #ecf0f1;">Gênero:</b> Ação, Aventura</p>
+                                                <p class="mb-2 small" style="color: #bdc3c7;"><i class="fas fa-certificate mr-2" style="color: #f39c12;"></i><b style="color: #ecf0f1;">Classificação:</b> 14 anos</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer border-top-0" style="border-radius: 0 0 12px 12px; border-top: 2px solid #34495e; background: #2c3e50;">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <button class="btn btn-success btn-sm shadow" 
+                                                        style="border-radius: 20px; background: #27ae60; border: none;"
+                                                        title="Editar filme" disabled>
+                                                    <i class="fas fa-edit mr-1"></i> Editar
+                                                </button>
+
+                                                <button class="btn btn-danger btn-sm shadow"
+                                                        style="border-radius: 20px; background: #e74c3c; border: none;"
+                                                        title="Excluir filme" disabled>
+                                                    <i class="fas fa-trash mr-1"></i> Excluir
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <?php
-                                $sel = "SELECT * FROM tb_filmes WHERE id_user = :id_user ORDER BY id DESC LIMIT 8";
+                                $sel = "SELECT * FROM tb_filmes WHERE id_user = :id_user ORDER BY id DESC LIMIT 7";
 
                                 try {
                                     $r = $conect->prepare($sel);
@@ -168,31 +204,32 @@
                                         while ($f = $r->fetch(PDO::FETCH_OBJ)) {
                                 ?>
 
-                                <!-- CARD DO FILME SUPER MELHORADO -->
+                                <!-- CARD DOS FILMES DO BANCO -->
                                 <div class="col-md-4 mb-4">
-                                    <div class="card h-100 shadow-sm" style="border: none; border-radius: 12px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                                    <div class="card h-100 shadow-sm" style="border: none; border-radius: 12px; transition: transform 0.3s ease, box-shadow 0.3s ease; background: #34495e;">
                                         <div style="position: relative; overflow: hidden; border-radius: 12px 12px 0 0;">
                                             <img src="../img/cartaz/<?php echo $f->cartaz ?>" 
                                                 class="card-img-top" 
-                                                style="height: 300px; object-fit: cover; transition: transform 0.3s ease;">
+                                                style="height: 300px; object-fit: cover; transition: transform 0.3s ease;"
+                                                alt="<?php echo $f->titulo ?>">
                                             <div class="card-img-overlay d-flex align-items-end" style="background: linear-gradient(transparent 40%, rgba(0,0,0,0.8));">
                                                 <h5 class="card-title text-white mb-0 text-truncate"><?php echo $f->titulo ?></h5>
                                             </div>
                                         </div>
 
-                                        <div class="card-body d-flex flex-column" style="background: white;">
+                                        <div class="card-body d-flex flex-column" style="background: #2c3e50;">
                                             <div class="movie-info mt-auto">
-                                                <p class="mb-2 small text-muted"><i class="fas fa-clock mr-2 text-primary"></i><b>Duração:</b> <?php echo $f->duracao ?> min</p>
-                                                <p class="mb-2 small text-muted"><i class="fas fa-tag mr-2 text-success"></i><b>Gênero:</b> <?php echo $f->genero ?></p>
-                                                <p class="mb-2 small text-muted"><i class="fas fa-certificate mr-2 text-warning"></i><b>Classificação:</b> <?php echo $f->classificacao ?></p>
+                                                <p class="mb-2 small" style="color: #bdc3c7;"><i class="fas fa-clock mr-2" style="color: #3498db;"></i><b style="color: #ecf0f1;">Duração:</b> <?php echo $f->duracao ?> min</p>
+                                                <p class="mb-2 small" style="color: #bdc3c7;"><i class="fas fa-tag mr-2" style="color: #27ae60;"></i><b style="color: #ecf0f1;">Gênero:</b> <?php echo $f->genero ?></p>
+                                                <p class="mb-2 small" style="color: #bdc3c7;"><i class="fas fa-certificate mr-2" style="color: #f39c12;"></i><b style="color: #ecf0f1;">Classificação:</b> <?php echo $f->classificacao ?></p>
                                             </div>
                                         </div>
 
-                                        <div class="card-footer bg-white border-top-0" style="border-radius: 0 0 12px 12px;">
+                                        <div class="card-footer border-top-0" style="border-radius: 0 0 12px 12px; border-top: 2px solid #34495e; background: #2c3e50;">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <a href="home.php?acao=editar&id=<?php echo $f->id ?>" 
                                                    class="btn btn-success btn-sm shadow" 
-                                                   style="border-radius: 20px;"
+                                                   style="border-radius: 20px; background: #27ae60; border: none;"
                                                    title="Editar filme">
                                                     <i class="fas fa-edit mr-1"></i> Editar
                                                 </a>
@@ -200,7 +237,7 @@
                                                 <a href="conteudo/del-filme.php?idDel=<?php echo $f->id ?>"
                                                    onclick="return confirm('Tem certeza que deseja remover este filme?')"
                                                    class="btn btn-danger btn-sm shadow"
-                                                   style="border-radius: 20px;"
+                                                   style="border-radius: 20px; background: #e74c3c; border: none;"
                                                    title="Excluir filme">
                                                     <i class="fas fa-trash mr-1"></i> Excluir
                                                 </a>
@@ -211,18 +248,10 @@
 
                                 <?php
                                         }
-                                    } else {
-                                        echo '<div class="col-12 text-center py-5">
-                                                <div class="alert alert-info shadow" style="border-radius: 15px; border: none; background: linear-gradient(45deg, #17a2b8, #6f42c1); color: white;">
-                                                    <i class="fas fa-film fa-4x mb-3" style="opacity: 0.8;"></i>
-                                                    <h3>Nenhum filme cadastrado ainda!</h3>
-                                                    <p class="mb-0 mt-2">Comece adicionando seu primeiro filme usando o formulário ao lado.</p>
-                                                </div>
-                                            </div>';
                                     }
 
                                 } catch (PDOException $e) {
-                                    echo '<div class="alert alert-danger alert-dismissible shadow m-3" style="border-radius: 10px; border: none;">
+                                    echo '<div class="alert alert-danger alert-dismissible shadow m-3" style="border-radius: 10px; border: none; background: #e74c3c; color: white;">
                                             <button type="button" class="close" data-dismiss="alert">×</button>
                                             <h5><i class="icon fas fa-exclamation-triangle"></i> Erro: ' . $e->getMessage() . '</h5>
                                         </div>';
